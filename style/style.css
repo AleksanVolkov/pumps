@@ -1,0 +1,319 @@
+
+
+body
+{
+    background-color: #e5e9ec;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+.circle
+{
+    width: 1400px;
+    height: 1400px;
+    background-color:#d3dae0;
+    border-radius: 100%;
+    position: absolute;
+    
+}
+.circle_one
+{
+    top: -465px;
+    right: -295px;
+    z-index: -1;
+    
+}
+.circle_two
+{
+    top: 1165px;
+    left: -595px;
+    z-index: -1;
+    
+}
+header
+{
+    position:sticky;
+    top: 0;
+    z-index: 15;
+}
+.header
+{
+    max-width: 1140px;
+    background-color:#e5e9ec00;
+    
+    margin: 0 auto;
+    display: flex;
+    
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+.bacHeader
+{
+    transition: 0.5s;
+    background-color:#e5e9ec;
+    -webkit-box-shadow: 0px 5px 11px -1px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0px 5px 11px -1px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px 5px 11px -1px rgba(34, 60, 80, 0.6);
+}
+
+.phone
+{
+    display: flex;
+    flex-direction: column;
+}
+nav
+{
+        display: flex;
+       gap: 40px;
+       padding-left: 10px;
+       padding-right: 10px;
+}
+nav a
+{
+    
+    font-size: 18px;
+    font-family: "PNRegular";  
+    font-weight: 700;
+    color: #343c3f;
+    
+}
+.phone span
+{
+    font-size: 18px;
+    font-family: "PNRegular";  
+    font-weight: 700;
+    
+}
+.btn 
+{
+    width: 200px;
+    height: 52px;
+    padding: 15px 5px;
+    background-color:#51c930;
+    
+    border-radius:25px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn a
+{
+    font-size: 16px;
+    font-family: "PNBold";
+    color: #ffff;
+
+}
+main
+{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+    
+}
+.pumps
+{
+    margin-top: 50px;
+}
+
+.contact_form
+{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.contact_form_title
+{
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: "PNBold";
+    color: #ffff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    max-width: 200px;
+    text-align: center;
+
+}
+input
+{
+    margin-bottom: 25px;
+}
+.title h1
+{
+    font-family: "OSBold";  
+    font-size: 42px;
+    color: #343c3f;
+    font-stretch: condensed;
+    line-height: 1.13;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.pumps_desc p
+{
+    font-family: "PNRegular";  
+    font-size: 24px;
+    line-height: 1.17;
+    color: #3d4145;
+    font-weight: 700;
+    max-width: 570px;
+}
+
+.pumps_content{
+    display: flex;
+    position: relative;
+    gap: 50px;
+    margin-bottom: 50px;
+    
+
+}
+.contact_form
+{
+    margin-top: 20px;
+    width: 250px;
+    height: 320px;
+    background-color:#aaaaaa;
+    border-radius:10px;
+}
+
+.pumps_content_box
+{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.pumps_content_box h5.pcb_one
+{
+    font-family: "PNBold";  
+    font-size: 25px;
+    text-align: center;
+    color: #343c3f;
+    font-weight: 900;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.pumps_content_box h5.pcb_two
+{
+    font-family: "PNBold";  
+    font-size: 30px;
+    text-align: center;
+    color: #343c3f;
+    font-weight: 900;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #aaaaaa;
+    width: 215px;
+    
+    
+}
+.cards_field_pumps
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_pumps_item
+{
+    overflow: hidden;
+    width: 165px;
+    height: 215px;
+    background-color:#ffff;
+    border-radius:10px;
+    padding-top: 30px;
+    border: 2px solid #ffff;
+    position: relative;
+}
+.card_pumps_item:hover
+{
+    border: 2px solid #51c930;
+}
+
+.card_pumps_item::before
+{
+    position: absolute;
+    content:"";
+    background: url(../images/hover_middle.png) no-repeat; 
+    width: 100%;
+    height: 50px;
+    top: -25px;
+    transition: 0.5s;
+}
+.card_pumps_item:hover:before
+{
+    top: -2px;
+    transition: 0.5s;
+}
+.card_item_svg
+{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+    min-height: 100px;
+} 
+.card_item_title
+{
+    font-family: "PNRegular"; 
+    color: #343c3f;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    max-width:140px ;
+    margin: 0 auto;
+
+}
+.card_pumps_item {
+    color:#343c3f;
+   
+}
+
+.card_pumps_item:hover{
+    
+    color:#51c930;
+    
+}
+.video_field
+{
+    margin-top: 100px;
+}
+.video_field_row
+{
+    margin-top: 50px;
+    display: flex;
+    gap: 36px;
+}
+iframe 
+{
+    
+    border-radius:15px;
+   
+}
+.video_item span
+{
+    
+    font-family: "PNBold"; 
+    color: #343c3f;
+    font-size: 18px;
+    font-weight: 900;
+    
+}
+.pumps_video.title h1
+{
+    text-align: center;
+}
+
+.pumps_materials
+{
+    margin-top: 80px;
+    text-align: center;
+}
+
