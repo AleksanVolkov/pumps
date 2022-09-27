@@ -51,12 +51,12 @@ function showBox(i=0){
 hideBox();
 showBox();
 
-tabs_parent.addEventListener('click', (e)  =>{
-
-    if(e.target && e.target.classList.contains('material_tab'))
+tabs.forEach(item =>{
+    item.addEventListener('click', (e)=>{
+        if(e.currentTarget && e.currentTarget.classList.contains('material_tab'))
     {
         tabs.forEach((item,i)=>{
-            if(e.target==item){
+            if(e.currentTarget==item){
                 hideBox();
                 showBox(i);
             }
@@ -64,5 +64,24 @@ tabs_parent.addEventListener('click', (e)  =>{
     }
 
 })
-});
+    })
+
+/*-------------картинка  big*/
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+})
+
+    
 
