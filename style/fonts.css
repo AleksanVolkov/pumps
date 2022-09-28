@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "OSBold";  
+    src: url("../fonts/OpenSans_Condensed-Bold.woff2") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+     }
+
+
+
+
+@font-face {
+    font-family: "PNRegular";  
+    src: url("../fonts/ProximaNovaT-Thin.woff") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+        }
+
+        @font-face {
+            font-family: "PNBold";  
+            src: url("../fonts/proximanova_bold.woff2") format("truetype"); 
+            font-style: normal; 
+            font-weight: normal;
+                }
+     
