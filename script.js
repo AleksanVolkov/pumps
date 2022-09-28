@@ -25,7 +25,8 @@ const tabs = document.querySelectorAll(".material_tab"),
 
 function hideBox (){
     boxs.forEach(item =>{
-        item.style.display = "none";
+        item.classList.add('hide');
+        item.classList.remove('show', 'fade');
         
     })
     tabs.forEach(item=>{
@@ -39,9 +40,9 @@ function hideBox (){
 }
 
 function showBox(i=0){
-        
+        boxs[i].classList.remove('hide');
         tabs[i].classList.add("tab_active");
-        boxs[i].style.display = "flex";
+        boxs[i].classList.add('show', "fade");
        
     
 
