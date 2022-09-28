@@ -33,6 +33,12 @@ body
     z-index: -1;
     
 }
+.circle_three
+{
+    top: 2765px;
+    right: -510px;
+    z-index: -1;
+}
 header
 {
     position:sticky;
@@ -161,13 +167,16 @@ input
     color: #3d4145;
     font-weight: 700;
     max-width: 570px;
+    
 }
+
 
 .pumps_content{
     display: flex;
     position: relative;
-    gap: 50px;
+    gap: 15px;
     margin-bottom: 50px;
+    justify-content: space-between;
     
 
 }
@@ -182,12 +191,21 @@ input
 
 .pumps_content_box
 {
-    margin-top: 100px;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 400px;
+    height: 350px;
     
 
+}
+.pumps_content_box img
+{
+    max-width: 100%;
+    max-height: 100%;
+   object-fit: contain;
+   margin-top: 13px;
 }
 .pumps_content_box h5.pcb_one
 {
@@ -198,6 +216,7 @@ input
     font-weight: 900;
     margin-top: 5px;
     margin-bottom: 5px;
+    max-width: 350px;
     
 }
 .pumps_content_box h5.pcb_two
@@ -367,6 +386,7 @@ iframe
 {
     position: relative;
     margin-top: 50px;
+    min-height: 650px;
 }
 .box_item
 {
@@ -521,4 +541,82 @@ iframe
         opacity: 1;
 
     }
+  }
+
+  .parts
+  {
+    margin-top: 80px;
+    text-align: center;
+  }
+  .parts_desc p
+  {
+    margin-top :20px;
+    text-align: center;
+    font-family: "PNRegular";  
+    font-size: 24px;
+    line-height: 1.17;
+    color: #3d4145;
+    font-weight: 600;
+    
+    
+  }
+
+
+  .part_field
+  {
+    margin-top :30px;
+  }
+
+  .parts_row
+  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .part_item
+  {
+    width: 355px;
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .part_item_title h3
+  {
+    font-family: "PNBold";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: #343c3f;
+    margin-top: 10px;
+  }
+  .part_item_img
+  {
+    width: 350px;
+    height: 200px;
+    margin-top: 20px;
+  }
+  .part_item_img img
+  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  .part_item_desc p
+  {
+    font-family: "PNRegular";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.29;
+    text-align: center;
+    color: #343c3f;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .part_item_btn 
+  {
+   text-align: center;
   }
