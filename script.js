@@ -75,7 +75,7 @@ tabs.forEach(item =>{
 
 
 
-
+$('.single-item').slick();
 
 
 
@@ -84,5 +84,6 @@ tabs.forEach(item =>{
 
 })
 
-    
+
+
 
