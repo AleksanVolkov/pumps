@@ -397,7 +397,8 @@ iframe
 {
     position: relative;
     margin-top: 50px;
-    min-height: 650px;
+    min-height: 500px;
+   
 }
 .box_item
 {
@@ -501,6 +502,10 @@ iframe
     top: 250px;
     right: 20px;
     z-index: 10;
+}
+.down
+{
+  margin-bottom: 150px;
 }
 
 .tab_active
@@ -682,6 +687,12 @@ iframe
     
    
   }
+  
+  .slick-prev:before,
+.slick-next:before
+{
+    font-size: 0;
+   }
   .slick-slide img
   {
     border-radius: 25px;
@@ -694,7 +705,7 @@ iframe
   .slider .slick-arrow
   {
     position: absolute;
-    top: 40%;
+    top: 50%;
     z-index: 10;
     font-size: 0;
     width: 80px;
@@ -874,7 +885,7 @@ iframe
   }
   .slider.multiple-items .slick-arrow
   {
-    top: 30%;
+    top: 45%;
   }
   .slider.multiple-items .slick-arrow.slick-prev
   {
@@ -915,5 +926,49 @@ iframe
     letter-spacing: 1px;
     max-width: 340px;
     margin-top: 10px;
+  }
+  @media(max-width:1150px)
+  {
+    .circle
+    {
+      width: 550px;
+      height: 550px;
+      display: none;
+    }
+  }
+  @media(max-width:550px)
+  {
+    .circle
+    {
+      width: 350px;
+      height: 350px;
+    }
+    .header
+    {
+      display: none;
+    }
+    .pumps_content
+    {
+      flex-direction: column;
+    }
+    .video_field_row
+    {
+      flex-direction: column;
+      align-items:center;
+    }
+    .material_tab
+    {
+      width: 155px;
+      height: 70px;
+    }
+
+    .parts_row
+    {
+      flex-direction: column;
+    }
+    .sales_box
+    {
+      flex-direction: column;
+    }
   }
   

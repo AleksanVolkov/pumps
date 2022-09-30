@@ -79,11 +79,24 @@ $('.single-item').slick();
 
 
 
-$('.multiple-items').slick({
-    infinite: true,
-    slidesToShow:4,
-    slidesToScroll: 1
-  });
+
+    $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow:4,
+        slidesToScroll:1,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow:1 ,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+                arrows:false
+              }
+            }
+        ]
+    });
 
 
 })
