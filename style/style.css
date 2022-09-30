@@ -72,7 +72,11 @@ header
     -moz-box-shadow: 0px 5px 11px -1px rgba(34, 60, 80, 0.6);
     box-shadow: 0px 5px 11px -1px rgba(34, 60, 80, 0.6);
 }
-
+.logo
+{
+    max-width: 210px;
+    min-height:60px ;
+}
 .phone
 {
     display: flex;
@@ -318,7 +322,8 @@ input
 }
 iframe 
 {
-    
+    max-width:356px ;
+    max-height: 200px;
     border-radius:15px;
    
 }
@@ -471,8 +476,8 @@ iframe
 
 .box_item_img
 {
-    width:  570px;
-    height: 300px;
+    max-width: 570px;
+    max-height: 300px;
     margin-left: 20px;
     
 }
@@ -665,6 +670,7 @@ iframe
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
+    gap: 30px;
     
   }
  
@@ -676,49 +682,238 @@ iframe
     
    
   }
- 
-    
-
-  .slider_item
-  {
-    width: 585px;
-    height: 320px;
-
-  }
-
   .slick-slide img
   {
     border-radius: 25px;
     display: block;
     object-fit: cover;
-    height: 320px;
+    height: 360px;
     width: 100%;
   }
 
   .slider .slick-arrow
   {
     position: absolute;
-    top: 45%;
+    top: 40%;
     z-index: 10;
     font-size: 0;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 90px;
     border: none;
   }
   .slider .slick-arrow.slick-prev
   {
     background: url(../images/left-chevron.png) 0 0 /100% no-repeat;
-    left: -70px;
+    left: -5px;
     
   }
 
   .slider .slick-arrow.slick-next
   {
     background: url(../images/chevron.png) 0 0 /100% no-repeat;
-    right: -70px;
+    right: -5px;
+    
+  }
+  .sales_content
+  {
+    max-width: 520px;
+    margin-top: 50px;
+  }
+  .sales_content_tab
+  {
+    display: flex;
+  }
+  .sales_content_title
+  {
+    text-rendering: optimizeLegibility;
+    text-align: left;
+    outline: none;
+    line-height: 28px;
+    color: #3d4145;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: "PNBold";
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+  .sales_content_desc
+  {
+    color: #343c3f;
+    text-rendering: optimizeLegibility;
+    font-family: "PNRegular";
+    font-weight: 600;
+    text-align: left;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-size: 16px;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    margin-bottom: 17px;
+    transition: 0.7s;
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  .sales_content_tab .left{
+    color: #343c3f;
+    text-rendering: optimizeLegibility;
+    font-family: "PNRegular";
+    line-height: 1;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    outline: none;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 12px 10px;
+    box-sizing: border-box;
+  }
+  .sales_content_tab
+  {
+    margin-bottom: 4px;
+  }
+  .sales_content_tab .right
+  {
+    color: #343c3f;
+    text-rendering: optimizeLegibility;
+    font-family: "PNRegular";
+    line-height: 1;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    outline: none;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 12px 10px;
+    box-sizing: border-box;
+  }
+  .green
+  {
+    background-color: rgba(92, 210, 60, .6);
+    border-radius: 10px ;
+  }
+  .white
+  {
+    background-color:#ffffffa1;
+    border-radius: 10px ;
+  }
+  .white:hover
+  {
+    background-color:#343c3f00;
+    border-radius: 10px ;
+  }
+  .right.bold,
+  .left.bold
+  {
+    font-family: "PNBold";
+  }
+  .sales_content.btn
+  {
+    min-width: 250px;
+    margin-top: 20px;
+  }
+
+  .part_sale_slider_container
+  {
+    max-width: 1140px;
+    margin: 0 auto 50px;
+  }
+  .slider_wrapper_parts
+  {
+    max-width: 1140px;
+    margin-top: 50px;
+  }
+  .card_pumps_item.slider
+  {
+    width: 270px;
+    height: 270px;
+    padding: 0;
+  }
+  .card_pumps_item.slider img
+  {
+    border-radius:0;
+    height: 100%;
+  }
+  .card_pumps_item.slider::before
+  {
+    height: 100px;
+    left: 20%;
+    
+  }
+  .parts_slider_item
+  {
+    text-align: center;
+
+  }
+  .parts_slider_item h3
+  {
+    color: #343c3f;
+    line-height: 1;
+    font-family: "OSBold";
+    font-size: 20px;
+    padding: 0 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    max-width: 260px;
+  }
+  .slider.multiple-items .slick-arrow
+  {
+    top: 30%;
+  }
+  .slider.multiple-items .slick-arrow.slick-prev
+  {
+    background: url(../images/left-chevron.png) 0 0 /100% no-repeat;
+    left: -70px;
     
   }
 
-  
-
+  .slider.multiple-items .slick-arrow.slick-next
+  {
+    background: url(../images/chevron.png) 0 0 /100% no-repeat;
+    right: -55px;
+    
+  }
+  footer
+  {
+    display: flex;
+    justify-content: space-around;
+    background-color:#d3dae0;
+    min-height: 220px;
+  }
+  .fl,
+  .fr
+  {
+   margin-left: 100px;
+   margin-top: 50px;
+  }
+  .address,
+  .mail,
+  .phone,
+  .footer_desc
+  {
+    text-rendering: optimizeLegibility;
+    font-family: "PNRegular";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.13;
+    letter-spacing: 1px;
+    max-width: 340px;
+    margin-top: 10px;
+  }
   
