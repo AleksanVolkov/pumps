@@ -92,17 +92,18 @@ nav
 nav a
 {
     
-    font-size: 18px;
-    font-family: "PNRegular";  
-    font-weight: 700;
+    font-size: 17px;
+    font-family: "PNBold";  
+    
     color: #343c3f;
+    
     
 }
 .phone span
 {
-    font-size: 18px;
-    font-family: "PNRegular";  
-    font-weight: 700;
+    font-size: 17px;
+    font-family: "PNBold";  
+   
     
 }
 .btn 
@@ -110,7 +111,7 @@ nav a
     width: 200px;
     height: 52px;
     padding: 15px 5px;
-    background-color:#51c930;
+    background-color:#E4002B;
     
     border-radius:25px;
     text-align: center;
@@ -127,14 +128,106 @@ nav a
 main
 {
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 0 auto 80px;
     
     
 }
 .pumps
 {
     margin-top: 50px;
+    text-align: center;
 }
+/*  FoRMA start */
+
+.decor {
+  position: relative;
+  max-width: 400px;
+ 
+  background: #d3dae0;
+  border-radius: 30px;
+}
+.form-left-decoration, .form-right-decoration {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: #E4002B;
+  border-radius: 20px;
+}
+.form-left-decoration {
+  bottom: 60px;
+  left: -30px;
+}
+.form-right-decoration {
+  top: 60px;
+  right: -30px;
+}
+.form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: #939393;
+}
+.form-left-decoration:before {
+  top: -20px;
+}
+.form-left-decoration:after {
+  top: 20px;
+  left: 10px;
+}
+.form-right-decoration:before {
+  top: -20px;
+  right: 0;
+}
+.form-right-decoration:after {
+  top: 20px;
+  right: 10px;
+}
+.circle_form {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
+.form-inner {
+  padding: 10px 50px;
+  width: 300px;
+  height: 330px;
+}
+.form-inner input, .form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.form-inner input[type="submit"] {
+  margin-top: 30px;
+  background: #E4002B;
+  border-bottom: 4px solid #d87d56;
+  color: white;
+  font-size: 14px;
+}
+.form-inner textarea {
+  resize: none;
+}
+.form-inner h3 {
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #707981;
+}
+/*  FoRMA end */
 
 .contact_form
 {
@@ -142,13 +235,13 @@ main
     flex-direction: column;
     align-items:center;
 }
-.contact_form_title
+.decor h3
 {
-    margin-top: 30px;
+    margin-top: 5px;
     font-size: 18px;
     font-family: "PNBold";
-    color: #ffff;
-    margin-bottom: 30px;
+    color: #343c3f;
+    margin-bottom: 20px;
     text-transform: uppercase;
     max-width: 200px;
     text-align: center;
@@ -187,7 +280,7 @@ input
     gap: 15px;
     margin-bottom: 50px;
     justify-content: space-between;
-    
+    margin-top: 30px;
 
 }
 .contact_form
@@ -204,7 +297,7 @@ input
    
     display: flex;
     flex-direction: column;
-    align-items: center;
+   
     max-width: 400px;
     height: 350px;
     
@@ -216,8 +309,9 @@ input
     max-height: 100%;
    object-fit: contain;
    margin-top: 13px;
+   margin-bottom: 25px;
 }
-.pumps_content_box h5.pcb_one
+/* .pumps_content_box h5.pcb_one
 {
     font-family: "PNBold";  
     font-size: 25px;
@@ -228,18 +322,32 @@ input
     margin-bottom: 5px;
     max-width: 350px;
     
-}
+} */
 .pumps_content_box h5.pcb_two
 {
     font-family: "PNBold";  
-    font-size: 30px;
-    text-align: center;
+    font-size:18px;
+    
     color: #343c3f;
     font-weight: 900;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: #aaaaaa;
-    width: 215px;
+    text-align: left;
+    min-width: 300px;
+    position: relative;
+    
+    
+}
+.pumps_content_box h5.pcb_two::before
+{
+   content: '';
+   width: 8px;
+   height: 8px;
+   background-color: #343c3f;
+   border-radius: 50%;
+   top: 33%;
+   left: -15px;
+   position: absolute;
     
     
 }
@@ -262,7 +370,7 @@ input
 }
 .card_pumps_item:hover
 {
-    border: 2px solid #51c930;
+    border: 2px solid #E4002B;
 }
 
 .card_pumps_item::before
@@ -307,7 +415,7 @@ input
 
 .card_pumps_item:hover{
     
-    color:#51c930;
+    color:#E4002B;
     
 }
 .video_field
@@ -374,18 +482,19 @@ iframe
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 35px;
     border-radius: 15px;
     border: 2px solid #ffffff; 
     cursor: pointer;
    
     
 }
-.tab_img
+.tab_img img
 {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 20px;
+  object-fit: fill;
+  width: 90px;
+  height: 120px;
+  display: block;
 }
 .tab_sesc
 {
@@ -439,7 +548,7 @@ iframe
 {
     width: 310px;
     background-color: #ffff;
-    border: 2px solid #51c930;
+    border: 2px solid #E4002B;
     position: relative;
     padding: 12px 10px;
     
@@ -466,7 +575,7 @@ iframe
     width: 49px;
     height: 49px;
     position: absolute;
-    background-color: #51c930;
+    background-color: #E4002B;
     background-image: url(../images/icons8-plus-25.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -478,17 +587,17 @@ iframe
 .box_item_img
 {
     max-width: 570px;
-    max-height: 300px;
-    margin-left: 20px;
+    max-height: 350px;
+    margin-left: 180px;
     
 }
 .box_item_img img
 {
     border-radius: 25px;
   width: 100%;
-  height: 100%;
+  height: 350px;
   object-fit: fill;
-    
+     
     
 }
 .box_item_img::before
@@ -499,8 +608,8 @@ iframe
     background-image: url(../images/icons8-zoom-to-extents-64.png);
     background-size: contain;
     position: absolute;
-    top: 250px;
-    right: 20px;
+    top: 270px;
+    right: 36px;
     z-index: 10;
 }
 .down
@@ -512,7 +621,7 @@ iframe
 {
     overflow: hidden;
     position: relative;
-    border: 2px solid #51c930; 
+    border: 2px solid #E4002B; 
     transition: 0.5s;
 
 }
@@ -630,11 +739,17 @@ iframe
     text-align: center;
     color: #343c3f;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+    min-height: 60px;
   }
   .part_item_btn 
   {
    text-align: center;
+   text-transform: lowercase;
+       width: 134px;
+    height: 45px;
+    padding: 11px 5px;
+
   }
 
   .parts_button
@@ -679,7 +794,7 @@ iframe
     
   }
  
-  .slider_wrapper
+  /* .slider_wrapper
   {
     max-width: 585px;
     margin-top: 50px;
@@ -700,7 +815,7 @@ iframe
     object-fit: cover;
     height: 360px;
     width: 100%;
-  }
+  }*/
 
   .slider .slick-arrow
   {
@@ -724,6 +839,26 @@ iframe
     background: url(../images/chevron.png) 0 0 /100% no-repeat;
     right: -5px;
     
+  } 
+
+  .slick-prev:before, .slick-next:before {
+
+   
+    color:transparent;
+  }
+  .sales_img
+  {
+      
+      margin-top: 50px;
+      
+  }
+  .sales_img img
+  {
+    width: 570px;
+    height: 380px;
+    object-fit: cover;
+    
+    border-radius: 25px;
   }
   .sales_content
   {
@@ -815,8 +950,9 @@ iframe
   }
   .green
   {
-    background-color: rgba(92, 210, 60, .6);
+    background-color: #e4002ba3;
     border-radius: 10px ;
+    
   }
   .white
   {
@@ -832,6 +968,7 @@ iframe
   .left.bold
   {
     font-family: "PNBold";
+    color: #ffffff;
   }
   .sales_content.btn
   {
@@ -927,6 +1064,7 @@ iframe
     max-width: 340px;
     margin-top: 10px;
   }
+ 
   @media(max-width:1150px)
   {
     .circle
