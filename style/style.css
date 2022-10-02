@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 body
@@ -51,21 +58,25 @@ header
 {
     max-width: 1140px;
     background-color:#e5e9ec00;
-    
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    
     padding: 20px 0;
-    justify-content: space-between;
-    align-items:center;
-    
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 .bacHeader
 {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     background-color:#e5e9ec;
     -webkit-box-shadow: 0px 5px 11px -1px rgba(34, 60, 80, 0.6);
-    -moz-box-shadow: 0px 5px 11px -1px rgba(34, 60, 80, 0.6);
     box-shadow: 0px 5px 11px -1px rgba(34, 60, 80, 0.6);
 }
 .logo
@@ -75,11 +86,18 @@ header
 }
 .phone
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 nav
 {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
        gap: 40px;
        padding-left: 10px;
@@ -87,20 +105,14 @@ nav
 }
 nav a
 {
-    
     font-size: 17px;
     font-family: "PNBold";  
-    
     color: #343c3f;
-    
-    
 }
 .phone span
 {
     font-size: 17px;
     font-family: "PNBold";  
-   
-    
 }
 .btn 
 {
@@ -108,7 +120,6 @@ nav a
     height: 52px;
     padding: 15px 5px;
     background-color:#E4002B;
-    
     border-radius:25px;
     text-align: center;
     text-transform: uppercase;
@@ -119,29 +130,28 @@ nav a
     font-size: 16px;
     font-family: "PNBold";
     color: #ffff;
-
 }
 main
 {
     max-width: 1140px;
     margin: 0 auto 80px;
     position: relative;
-    
-    
 }
 .pumps
 {
-    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
     margin-top: 50px;
     text-align: center;
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 /*  FoRMA start */
 
 .decor {
   position: relative;
   max-width: 400px;
- 
   background: #d3dae0;
   border-radius: 30px;
 }
@@ -149,8 +159,10 @@ main
 {
   width: 62px;
   height: 122px;
-  object-fit: contain;
-  object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
   margin-left: 64px;
 }
 .form-left-decoration, .form-right-decoration {
@@ -236,9 +248,16 @@ main
 
 .contact_form
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items:center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 .decor h3
 {
@@ -248,10 +267,8 @@ main
     color: #343c3f;
     margin-bottom: 10px;
     line-height: 16px;
-
     max-width: 300px;
     text-align: center;
-
 }
 .decor h4
 {
@@ -264,16 +281,13 @@ main
     max-width: 300px;
     text-align: center;
     line-height: 16px;
-
 }
 input
 {
     margin-bottom: 25px;
 }
-
 /* кнопка */
 .custom-btn {
-
   width: 180px;
   height: 40px;
   color: #fff;
@@ -283,10 +297,15 @@ input
   font-weight: 500;
   background: transparent;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   -webkit-box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+           box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
    7px 7px 20px 0px rgba(0,0,0,.1),
    4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
@@ -294,6 +313,8 @@ input
 .btn-11 {
   border: none;
   background: #E4002B;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e4002aa8), to(#E4002B));
+    background: -o-linear-gradient(bottom, #e4002aa8, #E4002B);
     background: linear-gradient(0deg, #e4002aa8, #E4002B);
     color: #fff;
     overflow: hidden;
@@ -318,13 +339,15 @@ input
   opacity: .7;
 }
 .btn-11:active{
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+  -webkit-box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+          box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
               -4px -4px 6px 0 rgba(116, 125, 136, .2), 
     inset -4px -4px 6px 0 rgba(255,255,255,.2),
     inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
 }
-
-
 @-webkit-keyframes shiny-btn1 {
     0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
     80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
@@ -337,23 +360,6 @@ input
   81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
   100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* кнопка */
 .title h1
 {
@@ -374,18 +380,18 @@ input
     color: #3d4145;
     font-weight: 700;
     max-width: 570px;
-    
 }
-
-
 .pumps_content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     gap: 15px;
     margin-bottom: 50px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 30px;
-
 }
 .contact_form
 {
@@ -395,43 +401,31 @@ input
     background-color:#aaaaaa;
     border-radius:10px;
 }
-
 .pumps_content_box
 {
-   
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-   
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 400px;
     height: 350px;
-    
-
 }
 .pumps_content_box img
 {
     max-width: 100%;
     max-height: 100%;
-   object-fit: contain;
+   -o-object-fit: contain;
+      object-fit: contain;
    margin-top: 13px;
    margin-bottom: 25px;
 }
-/* .pumps_content_box h5.pcb_one
-{
-    font-family: "PNBold";  
-    font-size: 25px;
-    text-align: center;
-    color: #343c3f;
-    font-weight: 900;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    max-width: 350px;
-    
-} */
 .pumps_content_box h5.pcb_two
 {
     font-family: "PNBold";  
     font-size:18px;
-    
     color: #343c3f;
     font-weight: 900;
     margin-top: 5px;
@@ -439,32 +433,27 @@ input
     text-align: left;
     min-width: 300px;
     position: relative;
-    
-    
 }
 .pumps_content_box h5.pcb_two::before
 {
    content:url('');
-  
    width: 15px;
    height: 15px;
    background-image: url(../images/check-mark.png);
    background-size: contain;
    background-repeat: no-repeat;
-   
-   
- 
-  
    top: 22%;
    left: -20px;
    position: absolute;
-    
-    
 }
 .cards_field_pumps
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .card_pumps_item
@@ -491,11 +480,15 @@ input
     width: 100%;
     height: 50px;
     top: -25px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .card_pumps_item:hover:before
 {
     top: -2px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .card_item_svg
@@ -504,7 +497,6 @@ input
     height: auto;
     display: block;
     margin: 0 auto;
-    
     min-height: 100px;
 } 
 .card_item_title
@@ -516,17 +508,12 @@ input
     text-align: center;
     max-width:140px ;
     margin: 0 auto;
-
 }
 .card_pumps_item {
     color:#343c3f;
-   
 }
-
 .card_pumps_item:hover{
-    
     color:#E4002B;
-    
 }
 .video_field
 {
@@ -536,6 +523,8 @@ input
 .video_field_row
 {
     margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 36px;
 }
@@ -544,35 +533,33 @@ iframe
     max-width:356px ;
     max-height: 200px;
     border-radius:15px;
-   
 }
 .video_item
 {
-   
+   -webkit-transition: 0.5s;
+   -o-transition: 0.5s;
    transition: 0.5s;
 }
-
 .video_item:hover
 {
-    
-   transform: scale(1.1) translateY(-20px);
+   -webkit-transform: scale(1.1) translateY(-20px);
+       -ms-transform: scale(1.1) translateY(-20px);
+           transform: scale(1.1) translateY(-20px);
+   -webkit-transition: 0.5s;
+   -o-transition: 0.5s;
    transition: 0.5s;
 }
 .video_item span
 {
-    
     font-family: "PNBold"; 
     color: #343c3f;
     font-size: 18px;
     font-weight: 900;
-    
 }
-
 .pumps_video.title h1
 {
     text-align: center;
 }
-
 .pumps_materials
 {
     margin-top: 80px;
@@ -580,8 +567,12 @@ iframe
 }
 .pumps_materials_tabs
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 40px;
     position: relative;
 }
@@ -590,19 +581,25 @@ iframe
     width: 260px;
     height: 220px;
     background-color: #ffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 35px;
     border-radius: 15px;
     border: 2px solid #ffffff; 
     cursor: pointer;
-   
-    
 }
 .tab_img img
 {
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   width: 90px;
   height: 120px;
   display: block;
@@ -618,15 +615,17 @@ iframe
     position: relative;
     margin-top: 50px;
     min-height: 500px;
-   
 }
 .box_item
 {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     min-height: 650px;
-   
 }
 .box_item_content
 {
@@ -645,15 +644,12 @@ iframe
     font-size: 34px;
     font-weight: 700;
     line-height: 28px;
-  
     color: #343c3f;
-
 }
 .box_item_content p
 {
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
 .calck 
 {
@@ -662,15 +658,14 @@ iframe
     border: 2px solid #E4002B;
     position: relative;
     padding: 12px 10px;
-    
 }
 .calck:hover
 {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     -webkit-box-shadow: 1px 15px 12px -7px rgba(81, 201, 48, 0.3);
-    -moz-box-shadow: 1px 15px 12px -7px rgba(81, 201, 48, 0.3);
     box-shadow: 1px 15px 12px -7px rgba(81, 201, 48, 0.3);
-    
 }
 .calck a
 {
@@ -694,22 +689,19 @@ iframe
     top:-1px;
     left:-1px;
 }
-
 .box_item_img
 {
     max-width: 570px;
     max-height: 350px;
     margin-left: 180px;
-    
 }
 .box_item_img img
 {
     border-radius: 25px;
   width: 100%;
   height: 350px;
-  object-fit: fill;
-     
-    
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .box_item_img::before
 {
@@ -727,16 +719,15 @@ iframe
 {
   margin-bottom: 150px;
 }
-
 .tab_active
 {
     overflow: hidden;
     position: relative;
     border: 2px solid #E4002B; 
+    -webkit-transition: 0.5s; 
+    -o-transition: 0.5s; 
     transition: 0.5s;
-
 }
-
 .tab_active::before
 {
     position: absolute;
@@ -746,11 +737,14 @@ iframe
     height: 50px;
     top: -5px;
     left: 20%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s;
 }
-
 .show
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .hide
@@ -760,25 +754,31 @@ iframe
 .fade
 
 {
-  animation-name: fade;
-  animation-duration: 1s;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-
+@-webkit-keyframes fade {
+    from {
+      top:60px;
+      opacity: 0.3;
+    }
+    to {
+        top:5px;
+        opacity: 1;
+    }
+  }
 @keyframes fade {
     from {
       top:60px;
       opacity: 0.3;
-
-
     }
-  
     to {
         top:5px;
         opacity: 1;
-
     }
   }
-
   .parts
   {
     margin-top: 80px;
@@ -794,25 +794,33 @@ iframe
     line-height: 1.17;
     color: #3d4145;
     font-weight: 600;
-    
-    
   }
-
-
   .part_field
   {
     margin-top :30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .part_item
   {
     width: 355px;
     height: 385px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 70px;
   }
   .part_item_title h3
@@ -835,10 +843,10 @@ iframe
   {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 15px;
   }
-
   .part_item_desc p
   {
     font-family: "PNRegular";
@@ -858,13 +866,14 @@ iframe
        width: 134px;
     height: 45px;
     padding: 11px 5px;
-
   }
 
   .parts_button
   {
     max-width: 1140px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -879,9 +888,10 @@ iframe
     letter-spacing: 1.3px;
     text-transform: uppercase;
     position: relative;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
   }
-
   .parts_button span::after
   {
     content:"";
@@ -893,12 +903,12 @@ iframe
     height: 3px;
     background-size:contain;
   }
-
-
   .sales_box
   {
     max-width: 1140px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 30px;
     
@@ -941,33 +951,25 @@ iframe
   {
     background: url(../images/left-chevron.png) 0 0 /100% no-repeat;
     left: -5px;
-    
   }
-
   .slider .slick-arrow.slick-next
   {
     background: url(../images/chevron.png) 0 0 /100% no-repeat;
     right: -5px;
-    
   } 
-
   .slick-prev:before, .slick-next:before {
-
-   
     color:transparent;
   }
   .sales_img
   {
-      
       margin-top: 50px;
-      
   }
   .sales_img img
   {
     width: 570px;
     height: 380px;
-    object-fit: cover;
-    
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 25px;
   }
   .sales_content
@@ -977,6 +979,8 @@ iframe
   }
   .sales_content_tab
   {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .sales_content_title
@@ -1011,8 +1015,12 @@ iframe
     line-height: 1.33;
     letter-spacing: 0.4px;
     margin-bottom: 17px;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
     transition: 0.7s;
-    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
     opacity: 1;
   }
   .sales_content_tab .left{
@@ -1032,7 +1040,8 @@ iframe
     width: 100%;
     height: 100%;
     padding: 12px 10px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .sales_content_tab
   {
@@ -1056,7 +1065,8 @@ iframe
     width: 100%;
     height: 100%;
     padding: 12px 10px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .green
   {
@@ -1139,19 +1149,19 @@ iframe
   {
     background: url(../images/left-chevron.png) 0 0 /100% no-repeat;
     left: -70px;
-    
   }
-
   .slider.multiple-items .slick-arrow.slick-next
   {
     background: url(../images/chevron.png) 0 0 /100% no-repeat;
     right: -55px;
-    
   }
   footer
   {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-color:#d3dae0;
     min-height: 220px;
   }
@@ -1175,14 +1185,12 @@ iframe
     max-width: 340px;
     margin-top: 10px;
   }
- 
   @media(max-width:1600px)
   {
     .circle
     {
       width: 850px;
       height: 850px;
-      
     }
   }
   @media(max-width:1150px)
@@ -1191,7 +1199,6 @@ iframe
     {
       width: 550px;
       height: 550px;
-      
     }
   }
   @media(max-width:700px)
@@ -1204,7 +1211,6 @@ iframe
     {
       width: 550px;
       height: 550px;
-      
     }
     .circle_one
     {
@@ -1228,12 +1234,18 @@ iframe
     }
     .video_field_row
     {
-      flex-direction: column;
-      align-items:center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align:center;
+          -ms-flex-align:center;
+              align-items:center;
     }
     .pumps_materials_tabs
     {
-      flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
     }
   }
   @media(max-width:550px)
@@ -1250,8 +1262,6 @@ iframe
     {
       display: none;
     }
-
-
     .header
     {
       display: none;
@@ -1259,27 +1269,39 @@ iframe
     .pumps_content
     
     {
-      flex-direction: column;
-      
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
     .video_field_row
     {
-      flex-direction: column;
-      align-items:center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align:center;
+          -ms-flex-align:center;
+              align-items:center;
     }
     .material_tab
     {
       width: 155px;
       height: 70px;
     }
-
     .parts_row
     {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
     .sales_box
     {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
   }
   
