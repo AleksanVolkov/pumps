@@ -99,6 +99,9 @@ $('.single-item').slick();
     });
 
 
+
+    
+
 })
 
 

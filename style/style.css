@@ -859,13 +859,18 @@ iframe
     margin-bottom: 5px;
     min-height: 60px;
   }
-  .part_item_btn 
+  .part_item_btn,
+  .sales_content.btn
   {
    text-align: center;
    text-transform: lowercase;
-       width: 134px;
+   width: 134px;
     height: 45px;
     padding: 11px 5px;
+    cursor:default;
+    color:#fff;
+    font-family: PNRegular;
+    font-weight: 600;
   }
 
   .parts_button
@@ -877,12 +882,13 @@ iframe
     text-align: center;
     margin-bottom: 30px;
     margin-top: 30px;
+    cursor:none;
   }
   .parts_button span
   {
     color: #343c3f;
     font-family: "OSBold";
-    cursor: pointer;
+    /* cursor: pointer; */
     font-size: 20px;
     line-height: 2.25;
     letter-spacing: 1.3px;
@@ -1090,11 +1096,11 @@ iframe
     font-family: "PNBold";
     color: #ffffff;
   }
-  .sales_content.btn
+  /* .sales_content.btn
   {
     min-width: 250px;
     margin-top: 20px;
-  }
+  } */
 
   .part_sale_slider_container
   {
@@ -1304,4 +1310,21 @@ iframe
               flex-direction: column;
     }
   }
-  
+  .img_center1
+  {
+    width: 356px;
+    height: 200px;
+    border-radius:25px;
+    background-image:url(../images/2imgvideo.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  }
+  .plug
+  {
+   
+    width: 120px;
+    height: 120px;
+  }
