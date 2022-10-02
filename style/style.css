@@ -9,7 +9,6 @@ body
     overflow-x: hidden;
     
 }
-
 .circle
 {
     width: 1400px;
@@ -17,21 +16,18 @@ body
     background-color:#d3dae0;
     border-radius: 100%;
     position: absolute;
-    
 }
 .circle_one
 {
-    top: -1465px;
+    top: -699px;
     right: -795px;
     z-index: -1;
-    
 }
 .circle_two
 {
     top: 165px;
     left: -910px;
     z-index: -1;
-    
 }
 .circle_three
 {
@@ -149,6 +145,14 @@ main
   background: #d3dae0;
   border-radius: 30px;
 }
+.decor img
+{
+  width: 62px;
+  height: 122px;
+  object-fit: contain;
+  object-position: center;
+  margin-left: 64px;
+}
 .form-left-decoration, .form-right-decoration {
   content: "";
   position: absolute;
@@ -220,9 +224,7 @@ main
   color: white;
   font-size: 14px;
 }
-.form-inner textarea {
-  resize: none;
-}
+
 .form-inner h3 {
   margin-top: 0;
   font-family: 'Roboto', sans-serif;
@@ -240,20 +242,119 @@ main
 }
 .decor h3
 {
-    margin-top: 5px;
-    font-size: 18px;
+    
+    font-size: 16px;
     font-family: "PNBold";
     color: #343c3f;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    max-width: 200px;
+    margin-bottom: 10px;
+    line-height: 16px;
+
+    max-width: 300px;
     text-align: center;
+
+}
+.decor h4
+{
+    margin-top: 5px;
+    font-size: 16px;
+    font-family: "PNRegular";
+    color: #343c3f;
+    margin-bottom: 20px;
+    font-weight: 600;
+    max-width: 300px;
+    text-align: center;
+    line-height: 16px;
 
 }
 input
 {
     margin-bottom: 25px;
 }
+
+/* кнопка */
+.custom-btn {
+
+  width: 180px;
+  height: 40px;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-11 {
+  border: none;
+  background: #E4002B;
+    background: linear-gradient(0deg, #e4002aa8, #E4002B);
+    color: #fff;
+    overflow: hidden;
+}
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3.5s ease-in-out infinite;
+    -webkit-animation:shiny-btn1 3.5s ease-in-out infinite ;
+}
+.btn-11:hover{
+  opacity: .7;
+}
+.btn-11:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+@keyframes shiny-btn1 {
+  0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+  80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+  81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* кнопка */
 .title h1
 {
     font-family: "OSBold";  
@@ -343,13 +444,19 @@ input
 }
 .pumps_content_box h5.pcb_two::before
 {
-   content: '';
-   width: 8px;
-   height: 8px;
-   background-color: #343c3f;
-   border-radius: 50%;
-   top: 33%;
-   left: -15px;
+   content:url('');
+  
+   width: 15px;
+   height: 15px;
+   background-image: url(../images/check-mark.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   
+   
+ 
+  
+   top: 22%;
+   left: -20px;
    position: absolute;
     
     
@@ -695,13 +802,9 @@ iframe
   .part_field
   {
     margin-top :30px;
-  }
-
-  .parts_row
-  {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    flex-wrap: wrap;
   }
   .part_item
   {
@@ -710,6 +813,7 @@ iframe
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 70px;
   }
   .part_item_title h3
   {
@@ -763,6 +867,7 @@ iframe
     align-items: center;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
   .parts_button span
   {
