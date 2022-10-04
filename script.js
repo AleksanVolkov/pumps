@@ -67,11 +67,93 @@ tabs.forEach(item =>{
 })
     })
 
-/*-------------картинка  big*/
+/*-------------modal*/
+const modalOpen = document.querySelectorAll('[data-modal]'),
+      modalClose = document.querySelector('[data-close]'), 
+      modalWrapper = document.querySelector('.modal_wrapper'),
+      btn = document.querySelectorAll('.btn');
+      
+
+      modalOpen.forEach(item=>{
+            item.addEventListener('click', (e)=>{
+
+                if(e.currentTarget && e.currentTarget.classList.contains('btn')){
+                    btn.forEach(item=>{
+                        if(e.currentTarget == item){
+                            modalWrapper.classList.add('open');
+                            modalWrapper.classList.remove('close')
+                        }
+                    })
+                    
+                }
+
+                
+
+                
+            })
+      });
 
 
+     function modalCloses(){
+            modalWrapper.classList.remove('open');
+            modalWrapper.classList.add('close');
+     }
+
+        modalClose.addEventListener('click',()=>{
+            
+            modalCloses();
+        }       )   
+                 
+        document.addEventListener('keydown', (e) => {
+        if (e.code === "Escape" && modalWrapper.classList.contains('open')) { 
+            modalWrapper.classList.remove('open');
+            modalWrapper.classList.add('close');
+        }
+    });
+      
+     
+      
+
+
+
+
+
+
+/*-------------modal end */
+
+/*more video*/
+// const more = document.querySelector('.more'),
+//       videoOver =document.querySelector('.video_items'); 
+
+// more.addEventListener('click', ()=>{
+//     videoOver.classList.remove('max_height')
+
+// })
     
+/*---------------------------- form  ----------------------------*/
+$(document).ready(function() {
 
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			modalCloses();
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});
+
+
+/*---------------------------- form end  ----------------------------*/
 
 
 

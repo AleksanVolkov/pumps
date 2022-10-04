@@ -20,6 +20,7 @@
 <body>
     <div class="wrapper_content">
 
+        
            <header>
         <div class="header">
         <div class="logo">
@@ -36,8 +37,8 @@
             <span>+375 (44) 7630366</span>
             <span>info@indastro.by</span>
         </div>
-        <div class="btn call">
-           <a href="">заказать звонок</a> 
+        <div data-modal class="btn call">
+           <span href="">заказать звонок</span> 
         </div>
     </div>
         
@@ -54,41 +55,22 @@
                         С ПОМОЩЬЮ ИНЪЕКЦИЙ И ГАРАНТИЕЙ ОТ 5 ЛЕТ.
                     </h1>
                 </div>
-                <!-- <div class="pumps_desc">
-                    <p>напрямую от производителя с обучением и бесплатным шеф-монтажом
-                    </p>
-                </div> -->
                 <div class="pumps_content">
-                    <!-- <div class="contact_form">
-                        <div class="contact_form_title">
-                            оставить номер телефона
-                        </div>
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="text" placeholder="Ваш телефон">
-                        <div class="btn">
-                            <a href="">отправить</a> 
-                        </div>                    
-                    </div> -->
-
-                   
-                    <!-- FoRMA start -->
-
-                    <form class="decor">
-                        <!-- <div class="form-left-decoration"></div>
-                        <div class="form-right-decoration"></div> -->
-                        <!-- <div class="circle_form"></div> -->
-                        <div class="form-inner">
+                    <form id="form" class="decor">
+                        <div  class="form-inner">
                         <img src="./images/industrial_worker_PNG11398.png" alt="">
                         <h3> сделаем пробный участок <br>
                         БЕСПЛАТНО</h3>
                         <h4> чтобы вы могли убедиться в эффективности нашего материала
 
                         </h4>
-                       
-                        <input type="phone" placeholder="Ваш номер телефона">
+                        <input type="hidden" name="project_name" value="INDASTRO">
+                        <input type="hidden" name="admin_email" value="kodak333vas@gmail.com">
+                        <input type="hidden" name="form_subject" value="Телефон клиента">
+                        <input class="req" name="phone" type="phone" placeholder="Ваш номер телефона">
                         
                         <!-- <input type="submit" value="Отправить"> -->
-                        <button class="custom-btn btn-11">оставить заявку<div class="dot"></div></button>
+                        <button  class="custom-btn btn-11">оставить заявку</button>
                         </div>
                     </form>
 
@@ -660,13 +642,15 @@
                 <h1>ИНЪЕКЦИОННАЯ ГИДРОИЗОЛЯЦИЯ ЛЮБЫХ УЗЛОВ НА 35 ЛЕТ</h1>
             </div>
             
-            <div class="video_items">
+            <div class="video_items max_height">
                 <div class="video_item">
                    
                     <div class="img_center1" onclick="$(this).replaceWith('<iframe width=\'356\' height=\'200\' src=\'https://www.youtube.com/embed/mhNKQIA-zsg?autoplay=1&amp;rel=0\' frameborder=\'0\' allowfullscreen></iframe><br/>');"><img class="plug" alt="" src="./images/play2.svg" /></div>
                     <span>ГИДРОИЗОЛЯЦИЯ примыкания</span>
                   </div>
                   <div class="video_item">
+
+                    <!-- <span class="more">больше видео</span> -->
                    
                     <div class="img_center1" onclick="$(this).replaceWith('<iframe width=\'356\' height=\'200\' src=\'https://www.youtube.com/embed/tD047CxFG9I?autoplay=1&amp;rel=0\' frameborder=\'0\' allowfullscreen></iframe><br/>');"><img class="plug" alt="" src="./images/play2.svg" /></div>
                     <span>ГИДРОИЗОЛЯЦИЯ шва с пеноплексом</span>
@@ -707,11 +691,15 @@
             
            
         </div>
+        
+        <div class="modal"></div>
         <div class="pumps_materials title">
             <h1>ЛУЧШИЕ МАТЕРИАЛЫ ДЛЯ <br>
                 ИНЪЕКЦИОННОЙ ГИДРОИЗОЛЯЦИИ</h1>
         </div>
+        
         <div class="pumps_materials_tabs">
+            
             <div class="material_tab tab_active">
                 <div class="tab_img">
                     <img src="./images/1pf1e.png" alt="">
@@ -749,8 +737,8 @@
                     <li>Лучшее предложение.</li>
                     <p>Комплект: пластиковый контейнер 25 кг.
                         Оборудование: Однокомпонентный насос.</p>
-                    <div class="btn calck">
-                        <a href=""> расчитать стоимость </a>
+                    <div data-modal class="btn calck">
+                        <span href=""> расчитать стоимость </span>
                     </div>
                             
                         
@@ -777,8 +765,8 @@
                         компонент А2 – 0,9 кг<br>
                         компонент Б – 0,3 кг
                     </p>
-                    <div class="btn calck">
-                        <a href=""> расчитать стоимость </a>
+                    <div data-modal class="btn calck">
+                        <span href=""> расчитать стоимость </span>
                     </div>
     
                 </div>
@@ -802,8 +790,8 @@
                     <p>Комплект:<br> компонент А – 20 кг <br>
                        
                         компонент Б – 23 кг
-                    <div class="btn calck">
-                        <a href=""> расчитать стоимость </a>
+                    <div data-modal class="btn calck">
+                        <span href=""> расчитать стоимость </span>
                     </div>
                     
     
@@ -821,8 +809,8 @@
                     <p>Наша линейка инъекционных материалов составляет более 10 продуктов, предназначенных для нейтрализации течей различной интенсивности, а также увеличения несущей способности конструкции. Мы предлагаем твёрдые и мягкие пены, инъектирование грунтов и пр.</p>
                 
                     <p>Наличие собственной лаборатории и производства позволяет производить большое количество модифицированных продуктов и индивидуальных решений специально для Ваших потребностей.</p>
-                    <div class="btn calck">
-                        <a href=""> расчитать стоимость </a>
+                    <div data-modal class="btn calck">
+                        <span href=""> расчитать стоимость </span>
                     </div>
                     
 
@@ -1403,14 +1391,40 @@
         
     </div>
     
-    
+    <div class="modal_wrapper close">
+        <div class="modal">
+            <form id="form" class="decor modal">
+                <div  class="form-inner modal">
+                    <div data-close class="modal_close">
+                        <img src="./images/cancel.png" alt="">
+                    </div>
+                    <img src="./images/industrial_worker_PNG11398.png" alt="">
+                    <h3> сделаем пробный участок <br>
+                    БЕСПЛАТНО</h3>
+                    <h4> чтобы вы могли убедиться в эффективности нашего материала
+        
+                    </h4>
+                <!--  -->
+
+                <input type="hidden" name="project_name" value="INDASTRO">
+                <input type="hidden" name="admin_email" value="kodak333vas@gmail.com">
+                <input type="hidden" name="form_subject" value="Телефон клиента">
+                <!--  -->
+                    <input name="phone" class="req" type="phone" placeholder="Ваш номер телефона">
+                    
+                    <!-- <input type="submit" value="Отправить"> -->
+                    <button class="custom-btn btn-11 modal">оставить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
     
     
 
 
    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
    
-    
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="./slick/slick/slick.min.js"></script>
     <script src="./script.js"></script>
     

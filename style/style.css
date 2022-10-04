@@ -125,13 +125,11 @@ nav a
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-}
-.btn a
-{
     font-size: 16px;
     font-family: "PNBold";
     color: #ffff;
 }
+
 main
 {
     max-width: 1140px;
@@ -169,7 +167,7 @@ main
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
-  margin-left: 64px;
+  
 }
 .form-left-decoration, .form-right-decoration {
   content: "";
@@ -220,6 +218,9 @@ main
   background: white;
 }
 .form-inner {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
   padding: 10px 50px;
   width: 300px;
   height: 330px;
@@ -317,6 +318,7 @@ input
   outline: none;
 }
 .btn-11 {
+  
   border: none;
   background: #E4002B;
     background: -webkit-gradient(linear, left bottom, left top, from(#e4002aa8), to(#E4002B));
@@ -324,6 +326,7 @@ input
     background: linear-gradient(0deg, #e4002aa8, #E4002B);
     color: #fff;
     overflow: hidden;
+    border-radius:25px;
 }
 .btn-11:hover {
     text-decoration: none;
@@ -523,7 +526,7 @@ input
 }
 .video_field
 {
-    margin-top: 100px;
+    
     position: relative;
     margin-top: 50px;
     display: -webkit-box;
@@ -533,31 +536,35 @@ input
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 36px;
+    
 }
 .video_items
 {
+  padding-top: 75px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 36px;
+  gap: 72px;
   max-width: 1140px;
   -ms-flex-wrap: wrap;
           flex-wrap: wrap;
           margin: 0 auto;
 }
-iframe 
+/* iframe 
 {
     max-width:356px ;
     max-height: 200px;
     border-radius:15px;
-}
+} */
 .video_item
 {
    -webkit-transition: 0.5s;
    -o-transition: 0.5s;
    transition: 0.5s;
+}
+.more{
+  display: block;
 }
 .video_item:hover
 {
@@ -687,7 +694,7 @@ iframe
     -webkit-box-shadow: 1px 15px 12px -7px rgba(81, 201, 48, 0.3);
     box-shadow: 1px 15px 12px -7px rgba(81, 201, 48, 0.3);
 }
-.calck a
+.btn.calck 
 {
     font-family: "OSBold";  
     font-size: 21px;
@@ -1190,6 +1197,79 @@ iframe
     max-width: 340px;
     margin-top: 10px;
   }
+
+  /*modal-----------------------------------------------------------*/
+  .open
+  {
+    display: flex;
+  }
+  .close 
+  {
+    display: none;
+  }
+  .modal_wrapper
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 150;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color:#343c3fe4;
+    overflow-y: scroll;
+  
+    justify-content: center;
+    align-items:center;
+  }
+  .decor.modal
+  {
+    width: 400px;
+    height: 450px;
+   
+  }
+  .form-inner.modal
+  {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+    align-items: center;
+  }
+  .decor.modal .modal_close img
+  {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .decor.modal img
+  {
+    width: 100px;
+    height: 132px;
+    margin-bottom: 20px;
+  }
+  .form-inner.modal h3
+  {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .form-inner.modal h4
+  {
+    font-size: 19px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+  .btn-11.modal
+  {
+    margin-top: 10px;
+    border-radius: 25px;
+    width: 240px;
+    height: 50px;
+   
+  }
+  /*----------------------------------------------------------------*/
   @media(max-width:1600px)
   {
     .circle
@@ -1317,7 +1397,27 @@ iframe
     }
     .video_items
     {
-      max-width: 360px;
+      max-width: 330px;
+      
+      
+      
+      gap: 50px;
+    }
+    /* .max_height
+    {
+      max-height: 337px;
+      overflow:hidden;
+    }
+    .more{
+      display: block;
+      position: absolute;
+      top: 395px;
+      left: 129px;
+    } */
+    .video_items iframe
+    {
+      max-width: 330px;
+      border-radius:25px;
     }
     .cards_field_pumps
     {
@@ -1404,6 +1504,9 @@ iframe
           -ms-flex-align:center;
               align-items:center;
     }
+    
+    
+  
     .pumps_materials_tabs
     {
       max-width: 350px;
@@ -1579,6 +1682,20 @@ iframe
     font-size: 13px;
     
   }
+  .decor.modal
+  {
+    width: 340px;
+    height: 450px;
+   
+  }
+  .form-inner.modal
+  {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 450px;
+    align-items: center;
+  }
   }
 
   
@@ -1594,12 +1711,9 @@ iframe
   
   
   
-  
-  
-  
   .img_center1
   {
-    width: 356px;
+    width: 330px;
     height: 200px;
     border-radius:25px;
     background-image:url(../images/2imgvideo.png);
@@ -1620,4 +1734,6 @@ iframe
     width: 100%;
     overflow-x: hidden;
   }
+  
+
   
