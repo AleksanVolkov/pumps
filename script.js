@@ -86,13 +86,14 @@ $('.single-item').slick();
         slidesToScroll:1,
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1150,
               settings: {
                 slidesToShow:1 ,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false,
-                arrows:false
+                variableWidth: true,
+                arrows:true
               }
             }
         ]
