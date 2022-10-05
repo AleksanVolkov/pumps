@@ -304,7 +304,7 @@ input
 /* кнопка */
 .custom-btn {
   width: 180px;
-  height: 40px;
+  height: 50px;
   color: #fff;
   border-radius: 10px;
   padding: 10px 25px;
@@ -1284,33 +1284,51 @@ box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.2);
     /*----------------------modal ok------------------------------------------*/
 
 
-
-
+ 
   .modal_ok
   {
-    background-color: #ffffff;
-    width: 800px;
+    
+    width: 1070px;
     height: 650px;
     border-radius: 25px;
     position: relative;
     margin: 50px auto;
+    padding: 5px;
+    -webkit-box-shadow: 2px 8px 40px 8px rgba(71, 71, 71);
+    -moz-box-shadow: 2px 8px 40px 8px rgba(71, 71, 71);
+    box-shadow: 2px 8px 40px 8px rgba(71, 71, 71);
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    box-sizing: border-box;
+   
+    
+  }
+  .border
+  {
+    min-height: 640px;
+    border:2px solid #a3a3a3;;
+    border-radius:25px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+    background-color: #ffffff;
   }
 
   .modal_ok img
   {
+    margin-top: 25px;
     width: 250px;
     height: 250px;
     object-fit: contain;
-    position: absolute;
-    top: 25px;
-    left: 250px;
+   
     z-index: 1;
   }
 
   .modal_ok_title 
   {
     position: relative;
-    padding-top: 350px;
+    padding-top: 50px;
   }
 
   .modal_ok_title h1
@@ -1318,8 +1336,8 @@ box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.2);
 
     
     
-    font-family: "OSBold";  
-    font-size: 22px;
+    font-family: "PNBold";  
+    font-size: 38px;
     color: #343c3f;
     font-stretch: condensed;
     line-height: 1.13;
@@ -1330,6 +1348,47 @@ box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.2);
     
     
    
+  }
+  .modal_ok_desc
+  {
+    font-family: "PNRegular";  
+    font-size: 22px;
+    color: #343c3f;
+    font-stretch: condensed;
+    line-height: 1.13;
+    letter-spacing: 0.4px;
+    margin-top: 10px;
+    z-index: 110;
+    text-align: center;
+  }
+  .blur
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 150;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color:#dadada83;
+    overflow-y: scroll;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items:center;
+    backdrop-filter: blur(5px);
+  }
+  .line
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 650px;
+  }
+  .line img
+  {
+    
+
   }
 
   
