@@ -33,17 +33,20 @@
             <!-- <a href="">МАСТИКИ</a> -->
             
         </nav>
+
         <div class="phone">
             <span>+375 (44) 7630366</span>
             <span>info@indastro.by</span>
         </div>
         <div data-modal class="btn call">
-           <span href="">заказать звонок</span> 
+           <span href="">получить консультацию</span> 
         </div>
     </div>
         
    </header>
    
+   
+    
    <main>
     <div class="circle_wrapper">
         <div class="circle circle_one"></div>
@@ -67,7 +70,9 @@
                         <input type="hidden" name="project_name" value="INDASTRO">
                         <input type="hidden" name="admin_email" value="kodak333vas@gmail.com">
                         <input type="hidden" name="form_subject" value="Телефон клиента">
-                        <input class="req" name="phone" type="phone" placeholder="Ваш номер телефона">
+                        <input class="req" name="name" type="name" placeholder="Ваше имя">
+                        <input id="phone" class="req" name="phone" type="phone" placeholder="Ваш номер телефона">
+                        
                         
                         <!-- <input type="submit" value="Отправить"> -->
                         <button  class="custom-btn btn-11">оставить заявку</button>
@@ -1387,9 +1392,16 @@
 
 
 
-
-        
+   <!-- <div class="modal_ok">
+    
+    <div class="modal_ok_title">
+        <h1>Спасибо за ваше обращение!</h1>
     </div>
+
+    <img src="./images/12376841_4884511.jpg" alt="">
+   </div>
+            
+    </div> -->
     
     <div class="modal_wrapper close">
         <div class="modal">
@@ -1410,7 +1422,12 @@
                 <input type="hidden" name="admin_email" value="kodak333vas@gmail.com">
                 <input type="hidden" name="form_subject" value="Телефон клиента">
                 <!--  -->
-                    <input name="phone" class="req" type="phone" placeholder="Ваш номер телефона">
+                <input class="req" name="name" type="name" placeholder="Ваше имя">
+                
+                    <input id="phoneM" name="phone" class="req" type="phone" placeholder="Ваш номер телефона">
+                    
+                
+                    
                     
                     <!-- <input type="submit" value="Отправить"> -->
                     <button class="custom-btn btn-11 modal">оставить заявку</button>
@@ -1418,15 +1435,26 @@
             </form>
         </div>
     </div>
-    
-    
 
+    
+    
 
    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
    
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="./jquery.maskedinput.min.js"></script>
     <script src="./slick/slick/slick.min.js"></script>
+
+
+    
     <script src="./script.js"></script>
+
+    <script>$(document).ready(function(){
+        $("#phone").mask("+(375) 99-9999999");
+    });</script>
+      <script>$(document).ready(function(){
+        $("#phoneM").mask("+(375) 99-9999999");
+    });</script>
     
     
 </body>
