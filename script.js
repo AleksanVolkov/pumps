@@ -121,14 +121,6 @@ const modalOpen = document.querySelectorAll('[data-modal]'),
 
 /*-------------modal end */
 
-/*more video*/
-// const more = document.querySelector('.more'),
-//       videoOver =document.querySelector('.video_items'); 
-
-// more.addEventListener('click', ()=>{
-//     videoOver.classList.remove('max_height')
-
-// })
     
 /*---------------------------- form  ----------------------------*/
 $(document).ready(function() {
@@ -141,11 +133,16 @@ $(document).ready(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			modalCloses();
+			modalCloses()
+            showModal();
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
 			}, 1000);
+            setTimeout(function() {
+				// Done Functions
+				modalOk.style.display= "none";
+			}, 12000);
 		});
 		return false;
 	});
@@ -203,11 +200,39 @@ $(document).ready(function(){
 
 ///////////////////////////////////modal end
 
+const modalOk = document.querySelector('.blur');
 
+function showModal(){
+    modalOk.style.display= "block";
+   
 
-functio
+}
+function hideModal(){
+    modalOk.style.display= "none";
+
+}
 /////////////////////////////////////////////
+/*mob NAW*/
 
+(function(){
+    var burger = document.querySelector('.burger-container'),
+        header = document.querySelector('.header-mob'),
+        menuIitem=document.querySelectorAll('.menu-item');
+    
+    burger.onclick = function() {
+        header.classList.toggle('menu-opened');
+    }
+
+    menuIitem.forEach(item=>{
+        item.addEventListener('click',()=>{
+            header.classList.toggle('menu-opened');
+        })
+        
+    }
+
+    )
+}());
+/*mob NAW END*/
 
 
 
