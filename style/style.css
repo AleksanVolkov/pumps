@@ -1507,9 +1507,9 @@ box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.2);
 
   .modal_ok img
   {
-    margin-top: 25px;
-    width: 250px;
-    height: 250px;
+    margin-top: 15px;
+    width: 220px;
+    height: 220px;
     object-fit: contain;
     z-index: 1;
   }
@@ -1554,7 +1554,7 @@ box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.2);
   .modal_ok_desc2 
   
   {
-    margin-top: 30px;
+    margin-top: 20px;
   
   }
   .modal_ok_desc2 a 
@@ -1565,7 +1565,7 @@ box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.2);
     cursor:pointer;
     color: #e4032d;
     font-weight: 600;
-    font-size: 29px;
+    font-size: 25px;
     transition: 0.5s;
   }
   .modal_ok_desc2 a:hover
@@ -1573,7 +1573,7 @@ box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.2);
     cursor:pointer;
     color: #343c3f;
     font-weight: 600;
-    font-size: 29px;
+    font-size: 25px;
     text-decoration: underline;
     transition: 0.5s;
    
@@ -1594,6 +1594,44 @@ box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.2);
     align-items:center;
     backdrop-filter: blur(5px);
   }
+  /*аниимация скидки*/
+  .p {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, .25);
+    border-width: 4px 0;
+    text-align: center;
+    width: 450px;
+ }
+  .p span {
+    font: 700 38px "OPRegular", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+   /* Clip Background Image */
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+   /* Animate Background Image */
+    -webkit-text-fill-color: #e8161687;
+    -webkit-animation: aitf 80s linear infinite;
+   /* Activate hardware acceleration for smoother animations */
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+ }
+ /* Animate Background Image */
+  @-webkit-keyframes aitf {
+    0% {
+      background-position: 0% 50%;
+   }
+    100% {
+      background-position: 100% 50%;
+   }
+ }
+  /*------------------*/
   .line
   {
     
@@ -1607,8 +1645,8 @@ box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.2);
   {
    
     object-fit: cover;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     
     
   }
@@ -1836,6 +1874,11 @@ box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.2);
     
   font-size: 19px;
   
+
+}
+.p span
+{
+  font-size: 25px;
 }
 .line {
   
@@ -2163,12 +2206,12 @@ object-fit: cover;
   }
   .border{
     height: 540px;
-    padding: 15px;
+    padding: 10px;
   }
   .modal_ok img {
     margin-top: 10px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     z-index: 1;
 }
@@ -2187,6 +2230,7 @@ object-fit: cover;
 }
 .modal_ok_desc2 {
   text-align: center;
+  margin-top: 10px;
 }
 
 .modal_ok_desc2 a {
@@ -2198,6 +2242,10 @@ object-fit: cover;
     
   font-size: 19px;
   
+}
+.area 
+{ 
+  margin-top: 10px;
 }
 .line {
   
@@ -2264,4 +2312,5 @@ object-fit: cover;
     overflow-x: hidden;
   }
   
+
 
