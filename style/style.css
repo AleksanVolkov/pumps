@@ -741,18 +741,17 @@ input
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 72px;
-  max-width: 1140px;
-  -ms-flex-wrap: wrap;
+  gap: 60px;
+  width: 1140px;
+  -ms-flex-wrap:  wrap;
           flex-wrap: wrap;
           margin: 0 auto;
 }
-/* iframe 
-{
-    max-width:356px ;
-    max-height: 200px;
-    border-radius:15px;
-} */
+.video_items iframe
+    {
+      max-width: 330px;
+      border-radius:25px;
+    }
 .video_item
 {
    -webkit-transition: 0.5s;
@@ -1743,6 +1742,8 @@ box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.2);
     }
     .video_items
     {
+      -ms-flex-wrap:  wrap;
+          flex-wrap: wrap;
       max-width: 760px;
     }
     .pumps_materials_tabs
